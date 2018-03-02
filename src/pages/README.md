@@ -27,11 +27,7 @@ entryComponents: [
 ``` 
 npm i angular2-jwt --save
 ``` 
-5. import angular2-jwt ไว้ที่ไฟล์ app.module.ts
-``` 
-
-``` 
-6. import class ของ provider ไว้ใน app.module.ts
+5. import class ของ provider ไว้ใน app.module.ts
 
 ``` 
 import { AuthProvider } from '../providers/auth/auth';
@@ -40,3 +36,4 @@ providers: [
     AuthProvider
   ]
 ``` 
+6. Enjoy !

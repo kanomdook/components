@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AuthProvider } from '../../providers/auth/auth';
 
 @IonicPage()
 @Component({
@@ -9,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class RegisterPage {
   private credencial: any = {};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public auth: AuthProvider) {
   }
 
   ionViewDidLoad() {
@@ -18,6 +19,11 @@ export class RegisterPage {
 
   register() {
     console.log(this.credencial);
+    // this.auth.signup(this.credencial).then(data => {
+    //   console.log(data);
+    // }).catch(err => {
+    //   alert(err)
+    // });
   }
 
 }
