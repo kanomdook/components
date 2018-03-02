@@ -1,11 +1,11 @@
 <ion-header>
 
-  <ion-navbar color="pink">
+  <ion-navbar>
   </ion-navbar>
 
 </ion-header>
 
-<ion-content class="bg" padding>
+<ion-content padding>
   <div class="container">
     <h1 class="big-txt">Login</h1>
     <ion-item>
@@ -16,7 +16,7 @@
       <ion-label floating>Password</ion-label>
       <ion-input type="password" [(ngModel)]="credencial.password"></ion-input>
     </ion-item>
-    <button ion-button full class="mod-btn" (click)="login()">
+    <button ion-button full (click)="login()" [disabled]="!(credencial.username && credencial.password)">
         <ion-icon name="key"></ion-icon>&nbsp; Login</button>
   </div>
 
