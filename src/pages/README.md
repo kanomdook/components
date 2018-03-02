@@ -36,4 +36,12 @@ providers: [
     AuthProvider
   ]
 ``` 
-6. Enjoy !
+6. HttpClientModule ไว้ใน app.module.ts
+``` 
+import { HttpClientModule } from '@angular/common/http';
+
+imports: [
+    HttpClientModule
+  ]
+``` 
+7. Enjoy !

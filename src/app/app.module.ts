@@ -14,6 +14,7 @@ import { PreLoginPage } from '../pages/pre-login/pre-login';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { AuthProvider } from '../providers/auth/auth';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AuthProvider } from '../providers/auth/auth';
     RegisterPage
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
