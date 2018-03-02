@@ -1,4 +1,5 @@
 ## วิธีใช้งาน auth_component
+### auther dookdik
 
 1. Copy folder pre-login, login, register ไปไว้ใน folder pages ในโปรเจ็คของเรา
 2. import class นี้ไว้ที่ app.module.ts
